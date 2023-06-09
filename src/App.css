@@ -1,0 +1,953 @@
+:root {
+    --color-primary: #3A78F5;
+    --color-secondary: #172a4f;
+    --color-secondary-light: #dfe7f6;
+
+    --color-success: #14B8A6;
+    --color-success-dark: #109384;
+
+    --background: #ececec;
+    --color-lpz-red: #d42922;
+    --color-lpz-red-light: #F9DDDC;
+    --color-lpz-green: #009E72;
+    --color-ende-yellow: #f3cb13;
+
+    --height-turno: 180px;
+}
+
+body {
+    background-color: var(--background) !important;
+}
+
+/* GLOBALES */
+
+#root .container {
+    min-height: 100vh;
+    background: var(--background);
+}
+
+#root .container .container_content {
+    padding: 0 50px;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_secondary {
+    background: var(--color-secondary) !important;
+}
+
+.button_success {
+    background: var(--color-success) !important;
+    color: var(--background) !important;
+    transition: all .5s !important;
+}
+
+.button_success:hover {
+    background: var(--color-success-dark) !important;
+}
+
+.button_secondary:hover {
+    background: var(--color-primary) !important;
+
+}
+
+.button_secondary span {
+    color: var(--background);
+}
+
+.bg_success {
+    background: var(--color-success) !important;
+    transition: background .5s;
+}
+
+.bg_secondary {
+    background: var(--color-secondary) !important;
+}
+
+.bg_secondary_light {
+    background: var(--color-secondary-light) !important;
+}
+
+.bg_danger {
+    background: var(--color-lpz-red) !important;
+}
+
+.bg_danger_light {
+    background: var(--color-lpz-red-light) !important;
+}
+
+.bg_color_1 {
+    background: #7D53DE !important;
+}
+
+.bg_color_2 {
+    background: #083D77 !important;
+}
+
+.bg_color_3 {
+    background: #F26430 !important;
+}
+
+.bg_color_4 {
+    background: #009B72 !important;
+}
+
+.bg_color_5 {
+    background: #DA4167 !important;
+}
+
+.bg_color_6 {
+    background: #279AF1 !important;
+}
+
+.bg_color_7 {
+    background: #D33E43 !important;
+}
+
+.bg_color_8 {
+    background: #7D84B2 !important;
+}
+
+.bg_color_9 {
+    background: #05F140 !important;
+}
+
+.bg_color_10 {
+    background: #FFC800 !important;
+}
+
+.loading_default {
+    margin: 20px 0;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    background: var(--background);
+    border-radius: 4px;
+}
+
+.card_list {
+    border-radius: 10px !important;
+}
+
+.m_0 {
+    margin: 0 !important;
+}
+
+.p_0 {
+    padding: 0 !important;
+}
+
+.mt_1 {
+    margin-top: 0.5rem !important;
+}
+
+.mt_2 {
+    margin-top: 1rem !important;
+}
+
+.mt_3 {
+    margin-top: 1.5rem !important;
+}
+
+.mt_4 {
+    margin-top: 2rem !important;
+}
+
+.mt_5 {
+    margin-top: 2.5rem !important;
+}
+
+.mt_6 {
+    margin-top: 3.5rem !important;
+}
+
+.mb_1 {
+    margin-bottom: 0.5rem !important;
+}
+
+.mb_2 {
+    margin-bottom: 1rem !important;
+}
+
+.mb_3 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb_4 {
+    margin-bottom: 2rem !important;
+}
+
+.mb_5 {
+    margin-bottom: 2.5rem !important;
+}
+
+.mb_6 {
+    margin-bottom: 3rem !important;
+}
+
+.pt_1 {
+    padding-top: .5rem !important;
+}
+
+.px_1 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.py_1 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.text_center {
+    text-align: center !important;
+}
+
+.text_light {
+    color: #fff !important;
+}
+
+@media screen and (max-width: 720px) {
+    .icono_point {
+        width: 50px;
+    }
+
+    .ant-list-item {
+        display: block !important;
+    }
+
+    .ant-list-item-action {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* PRINCIPAL */
+.home_container {
+    min-height: 100vh;
+    background: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_logo_container {
+    width: 100%;
+    text-align: center;
+}
+
+.home_container .home_text {
+    color: #fff;
+    text-align: center;
+
+}
+
+/* Header Wave */
+.wave_container {
+    padding: 0 !important;
+    height: 120px !important;
+}
+
+.wave_container_monitor {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+}
+
+.wave_container_monitor_default {
+    position: absolute;
+    width: 100%;
+}
+
+/* identify_device */
+.identify_device_container {
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* DISPENSADOR */
+.dispensador_container {
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.dispensador_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(18, 31, 61, 1) 0%, rgba(212, 41, 34, 1) 50%, rgba(0, 158, 114, 1) 100%);
+    /* background: linear-gradient(90deg, rgba(18, 31, 61, .2) 0%, rgba(212, 41, 34, 1) 50%, rgba(0, 158, 114, 1) 100%); */
+}
+
+.monitor_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgba(18, 31, 61, 0) 0%, rgba(212, 41, 34, 0.2) 25%, rgba(212, 41, 34, 1) 50%, rgba(212, 41, 34, 0.2) 75%, rgba(0, 158, 114, 0) 100%); */
+    background: linear-gradient(90deg, rgba(18, 31, 61, 1) 0%, rgba(212, 41, 34, 1) 50%, rgba(0, 158, 114, 1) 100%);
+}
+
+.monitor_header img {
+    width: 150px;
+}
+
+.dispensador_header img {
+    width: 150px;
+}
+
+.dispensador_container main .menu_content {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.dispensador_main {
+    min-height: 70vh;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.dispensador_main .card_tipo_ticket_select {
+    background: var(--color-secondary);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.dispensador_main .card_tipo_ticket_select:hover {
+    background-color: var(--color-lpz-red);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.dispensador_main .card_tipo_ticket_select:hover .ant-card-meta-title {
+    color: #fff;
+}
+
+.dispensador_main .ant-card-meta-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+/* ============================================ LOGIN */
+.login_container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container .login_button {
+    text-align: center;
+}
+
+.login_container .ant-card-head-title {
+    text-align: center;
+}
+
+
+
+/* LAYOUT */
+.footer_layout {
+    text-align: center !important;
+    background: var(--background) !important;
+}
+
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+    background: #fff;
+}
+
+.content_header_container_default {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.content-header-user {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 15px;
+    margin-right: 5px;
+}
+
+.content-header-user .content-header-user-text {
+    font-size: 12px;
+}
+
+.layout_header_navbar {
+    padding: 0 !important;
+    background: var(--color-secondary) !important;
+}
+
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    border-left: solid 1px;
+}
+
+.content-header-user {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 15px;
+    margin-right: 5px;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    margin-bottom: 16px;
+    background: #1F2431;
+}
+
+.logo {
+    margin: 0;
+    color: #fff;
+}
+
+
+/* layout DEFAULT */
+
+.site_layout_default_content {
+    min-height: 280px;
+    padding: 24px;
+}
+
+/* LOGO HEADER NAV*/
+.header_logo_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 31px;
+    border-radius: 5px;
+    border-bottom: solid 1px #fff;
+}
+
+.header_logo_content .logo_item {
+    color: #fff;
+    margin: 0 5px;
+}
+
+.header_user_avatar_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/*Sleccione utilizando cards*/
+
+.list_card .card_select {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all .6s;
+}
+
+.card_select:hover {
+    background-color: var(--color-secondary);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 20px, rgba(0, 0, 0, 0.23) 0px 2px 6px;
+}
+
+.card_select:hover .ant-card-meta-title {
+    color: var(--background);
+}
+
+.card_select:hover .ant-card-meta-description {
+    color: var(--background);
+}
+
+.card_select:hover .ant-avatar-icon {
+    background-color: var(--color-ende-yellow) !important;
+}
+
+/* CARD PUNTOS DE ATENCION */
+.card_point {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* CARD ROLE */
+.ant-space-item .card_role_select {
+    width: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: background-color .5s;
+}
+
+.card_role_select:hover {
+    background-color: var(--color-secondary);
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card_role_select:hover .ant-card-meta-title {
+    color: var(--background);
+}
+
+.card_role_select:hover .ant-card-meta-description {
+    color: var(--background);
+}
+
+/* AGENCIA */
+.card_agencia_select {
+    width: 500px !important;
+    min-height: 125px;
+}
+
+/* Operrador atencion al cliente */
+.atencion_card {
+    min-height: 225px;
+}
+
+.atencion_card .card_content {
+    min-height: 225px;
+}
+
+.atencion_card .ant-card-body {
+    padding: 0;
+}
+
+/*======================================================== OPERADOR TURNO ATENCION */
+/*Layout */
+.contenedor_page_header {
+    background: var(--color-secondary);
+}
+
+.contenedor_page_header .page_header_operador {
+    height: 200px;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 50px 5rem;
+}
+
+.contenedor_content {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center
+}
+
+.contenedor_content .content_operador {
+    margin-top: -100px;
+    z-index: 2;
+    border-radius: 15px;
+    max-width: 1250px;
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor_content .content_operador {
+        margin-top: -50px;
+    }
+}
+
+.contenedor_componente_atencion {
+    height: '300px'
+}
+
+@media screen and (min-width: 1400px) {
+    .contenedor_page_header .page_header_operador {
+        max-width: 1600px;
+    }
+
+    .contenedor_content .content_operador {
+        max-width: 1600px;
+    }
+
+    .atencion_card {
+        min-height: 300px !important;
+    }
+
+    .atencion_card .card_content {
+        min-height: 300px !important;
+    }
+}
+
+
+/*Layout */
+
+.atencion_card .ant-card-actions {}
+
+.atencion_card .ant-card-actions li {
+    margin: 0;
+    height: 48px;
+}
+
+
+.atencion_card .ant-card-actions li:hover {
+    /* background-color: salmon; */
+}
+
+.atencion_card .ant-card-actions li span {
+    height: 100%;
+}
+
+.atencion_card .ant-card-actions li:hover .icon_action {
+
+    /* scale: 140%; */
+}
+
+.atencion_card .icon_action {
+    margin-right: 3px;
+}
+
+.atencion_card .action_option {
+    height: 100%;
+    line-height: 48px;
+    color: var(--color-secondary);
+    transition: all .5s;
+}
+
+.action_option:hover {
+    color: var(--color-success);
+    font-size: 1rem;
+}
+
+/* =========================================== Operador Punto - PuntoAtencion */
+.tag_in_attention {
+    margin: 0;
+}
+
+.steps-content {
+    min-height: 200px;
+    margin-top: 16px;
+}
+
+.steps-action {
+    margin-top: 24px;
+}
+
+/* =========================================== Monitor y dispensador*/
+.quit_agencia {
+    position: absolute !important;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.status_bar_error {
+    background: var(--color-lpz-red);
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* Hero video Section */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hero-bg.jpg") top center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: calc(var(--height-turno) * -1);
+}
+
+@media (max-width: 992px) {
+    #hero {
+        margin-bottom: -60px;
+    }
+}
+
+#hero:before {
+    content: "";
+    /* background: rgba(21, 5, 23, 0.5) linear-gradient(rgba(26, 0, 33, 0.5) 0%, rgba(26, 0, 33, 0.5) 5%, rgba(38, 6, 51, 0.5) 40%, rgba(147, 47, 69, 0.7) 76%, rgba(236, 97, 93, 0.7) 94%, rgba(236, 97, 93, 0.5) 100%) repeat scroll 0% 0%; */
+    /* background: linear-gradient(90deg, rgba(18, 31, 61, 1) 0%, rgba(212, 41, 34, 1) 50%, rgba(0, 158, 114, 1) 100%); */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+/* turnos */
+#turnos-content {
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    z-index: 997;
+    position: relative;
+    height: var(--height-turno);
+}
+
+#turnos-content2 {
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    z-index: 997;
+    position: absolute;
+    height: 100vh;
+    width: 20%;
+}
+
+.hero_container2 {
+    max-width: 80%;
+    height: 100vh;
+    position: relative;
+    margin-left: 20%;
+}
+
+.monitor_default_container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(18, 31, 61, 1) 0%, rgba(212, 41, 34, 1) 50%, rgba(0, 158, 114, 1) 100%);
+    background: linear-gradient(150deg, rgba(23, 42, 79, 1) 0%, rgba(212, 41, 34, 1) 85%);
+    background: linear-gradient(150deg, rgba(23,42,79,1) 0%, rgba(212,41,34,1) 70%);
+    background: linear-gradient(150deg, rgba(23,42,79,1) 0%, rgba(212,41,34,1) 60%);
+}
+
+.monitor_header_default {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-top: 5px;
+    /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.multimedia_default_content {
+    width: auto;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: rgba(0, 0, 0,.3);
+    transition: all .5s !important;
+}
+
+.footer_default_content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 5px;
+    /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.turnos_default_content {
+    min-width: 35%;
+    margin: 10px 10px 10px 0px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0px 20px 20px 0px;
+    transition: all .5s !important;
+}
+
+.turnos_default_no_content {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    background: var(--color-secondary-light);
+    border-radius: 0;
+    transition: all .5s !important;
+}
+
+.turnos_default_content .ant-card-body {
+    padding: 5px;
+}
+
+.turnos_default_content .card_turno {
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.turnos_default_content .animated_flash_1 {
+    animation-duration: 1.5s;
+    animation-name: colorTurno1;
+}
+
+.turnos_default_content .animated_flash_2 {
+    animation-duration: 1.5s;
+    animation-name: colorTurno2;
+}
+
+.turnos_default_content .animated_flash_3 {
+    animation-duration: 1.5s;
+    animation-name: colorTurno3;
+}
+
+@media (max-width: 992px) {
+    #turnos-content {
+        height: 60px;
+    }
+}
+
+.turnos_content {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* padding: 0 20px; */
+    /* margin-top: 10px; */
+    /* overflow-x: scroll !important;  */
+    /* display: flex; */
+    /* flex-direction: column; */
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.turnos_content .ant-card-body {
+    padding: 5px;
+}
+
+.turnos_content .card_turno {
+    /* margin-bottom: 10px; */
+    /* min-width: 450px !important; */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.turnos_content .animated_flash_1 {
+    animation-duration: 1.5s;
+    animation-name: colorTurno1;
+}
+
+.turnos_content .animated_flash_2 {
+    animation-duration: 1.5s;
+    animation-name: colorTurno2;
+}
+
+.turnos_content .animated_flash_3 {
+    animation-duration: 1.5s;
+    animation-name: colorTurno3;
+}
+
+@keyframes colorTurno1 {
+
+    0%,
+    32%,
+    64%,
+    72%,
+    96% {
+        background: #fff;
+    }
+
+    16%,
+    48%,
+    80% {
+        background: #fbe89d
+    }
+}
+
+@keyframes colorTurno2 {
+
+    0%,
+    32%,
+    64%,
+    72%,
+    96% {
+        background: #fff;
+    }
+
+    16%,
+    48%,
+    80% {
+        background: #fbe89d
+    }
+}
+
+@keyframes colorTurno3 {
+
+    0%,
+    32%,
+    64%,
+    72%,
+    96% {
+        background: #fff;
+    }
+
+    16%,
+    48%,
+    80% {
+        background: #fbe89d
+    }
+}
+
+/* =========================================== Atencion*/
+.ticket_display {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket_display_bg {
+    background: var(--color-secondary);
+}
+
+/* ===========================================Administrador */
+/*=====Metodos de Editar Usuario*/
+.ant-input[disabled] {
+    color: #000 !important
+}
+
+.ant-switch-loading,
+.ant-switch-disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+.ant-checkbox-disabled+span {
+    color: rgba(0, 0, 0, 0.90) !important;
+}
+
+.ant-checkbox-disabled.ant-checkbox-checked .ant-checkbox-inner::after {
+    border-color: rgba(0, 0, 0, 0.90) !important;
+}
+
+.ant-switch-loading,
+.ant-switch-disabled {
+    opacity: 0.9 !important;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/ticket.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ETicket</title>
+    <style>
+      #loading-app {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: #fff;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="loading-app" class="animate__animated"></span>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      window.addEventListener("load", function (event) {
+        const loadingApp = document.getElementById('loading-app');
+        loadingApp.classList.add("animate__fadeOut");
+        setTimeout(function () {
+          loadingApp.remove()
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

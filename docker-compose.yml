@@ -1,0 +1,21 @@
+version: '2'
+
+services: 
+  ticketero-frontend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_APP_NAME=ETicket
+      - VITE_BACKEND_BASE_HOST=http://10.223.105.30:8080
+      - VITE_BACKEND_BASE_URL=http://10.223.105.30:8080/ticketerobackend
+
+      - VITE_BACKEND_API_URL=http://10.223.105.30:8080/ticketerobackend/api
+      - VITE_BACKEND_API_AUTH_URL=http://10.223.105.30:8080/ticketerobackend/oauth/token
+
+      - VITE_BACKEND_WEBSOCKET_URL=http://10.223.105.30:8080/ticketerobackend/ticketero-websocket
+
+      - VITE_OAUTH_USER="ticketero-app"
+      - VITE_OAUTH_PASSWORD="12345"
